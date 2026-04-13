@@ -1,0 +1,624 @@
+/* =====================================================
+   RESET & GLOBAL
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, #F5F1EA, #efe7dc);/* bg produk*/
+    color: #111111; /*tulisan */
+    font-family: Arial, sans-serif;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(to bottom, #F5F1EA, #efe7dc);/* di navigasi nan*/
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b58a60;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+nav a:hover {
+    color: #3b352f;
+}
+.dropdown {
+    z-index: 2000;
+}
+
+/* =====================================================
+   HERO / SLIDER
+===================================================== */
+.hero {
+    background: linear-gradient(135deg, #686464, #8d715e); /* bg koleksi celana */
+    padding: 50px 20px;
+    overflow: visible;
+}
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* HERO CONTENT */
+.hero-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #555;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+/* SLIDER BUTTON ukuran  */
+.slider-btn {  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.size-btn { /* SLIDER BUTTON ukuran  */
+    background: linear-gradient(135deg, #f3e9df, #e6d8c8);
+}
+
+
+.size-btn:hover,
+.size-btn.active {
+    background: linear-gradient(135deg, #b58a60, #9c744f);
+    color: #fff;
+    border-color: #b58a60;
+}
+/* DOTS */
+.slider-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #b58a60;
+}
+
+/* =====================================================
+   cargo pendek
+===================================================== */
+.promo {
+    padding: 40px 20px;
+}
+
+.section-title { /*  tulisan cargo panjang dan cargo pendek */
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.promo-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.promo-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.promo-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+/* =====================================================
+   PRODUK cargo panjang  
+===================================================== */
+.produk-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 per baris */
+    gap: 20px;
+}
+
+.produk-card {
+    background: #fff; /*(bg)kotak produk */
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+}
+
+.produk-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+/* =====================================================
+   SIZE BUTTON (UKURAN)
+===================================================== */
+
+.size-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.size-btn {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f3e9df;
+    color: #333;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-btn.prev {
+    left: 20px;
+}                           /* untuk button gambar koleksi celana */
+
+.slider-btn.next {
+    right: 20px;
+}
+/* Hover */
+.size-btn:hover {
+    background-color: #b58a60;
+    color: #fff;
+    border-color: #b58a60;
+}
+
+/* Aktif (dipilih) */
+.size-btn.active {
+    background-color: #b58a60;
+    color: #fff;
+    border-color: #b58a60;
+}
+
+.produk-card button {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f3e9df; /*warna button tambah keranjang*/
+    color: #333;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* hover sama seperti size button */
+.produk-card button:hover {
+    background-color: #b58a60;
+    color: #fff;
+    border-color: #b58a60;
+}
+
+/* kalau lagi ditekan */
+.produk-card button:active {
+    transform: scale(0.97);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer-detail {
+    background: linear-gradient(135deg, #2B2B2B, #6b5e55);
+    margin-top: 60px;
+    font-size: 14px;
+    color: #cccccc;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-box h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.footer-box h4 {
+    color: #ffffff;
+}
+
+.footer-box p,
+.footer-box a {
+   color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+    color: #d4a373;
+}
+
+.social-icon a {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.marketplace span {
+    background: linear-gradient(135deg, #3a3a3a, #4a403a);
+    color: #fff;
+}
+
+.marketplace span {
+    background: #575454;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+/* =====================================================
+   FLOATING BUTTON
+===================================================== */
+.scroll-top,
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    border-radius: 50%;                                
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll-top {
+    bottom: 80px;
+    background: #888;
+    padding: 10px 12px;
+    display: none;
+}
+
+.whatsapp {
+    bottom: 20px;
+    background: #25D366;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* =====================================================
+   CART ICON kotak keranjang pojok
+===================================================== */
+#cart-icon {
+    background: #C8A97E;
+    color: black;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+#cart-count {
+    background: red;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 768px) {
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .promo-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .produk-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   DROPDOWN GALERI
+===================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+/* bungkus galeri */
+.nav-item {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 140px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* isi dropdown */
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #555;
+}
+
+/* hover item */
+.dropdown a:hover {
+    background: #f7f3ee;
+    color: #b58a60;
+}
+
+/* tampil saat hover */                              
+.dropdown {
+    display: none;
+}                                 /* ini untuk dropdownya agar muncul ketika kursor pindah  */     
+
+.dropdown.show {
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* ===== STYLING KERANJANG ===== */
+#cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#cart-count {
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background: #f7f7f7;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.cart-sidebar.show {
+    right: 0;
+}
+
+.cart-sidebar h3 {
+    margin-top: 0;
+}
+
+#close-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#cart-items {
+    margin-top: 40px;
+    max-height: 60%;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#checkout-btn {
+    background: linear-gradient(135deg, #25d366, #1da851);
+    color: white;
+}
+/* =====================================================
+   MODAL KERANJANG (POP-UP TENGAH)
+===================================================== */
+
+/* Latar belakang gelap saat modal muncul */
+.overlay {
+    display: none; /* Sembunyi sebelum diklik */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Efek gelap transparan */
+    z-index: 2500; /* Pastikan di atas semua elemen */
+}
+
+/* Kotak Putih Keranjang (Tepat di Tengah Layar) */
+.modal-box {
+    display: none; /* Sembunyi sebelum diklik */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Menarik kotak tepat ke tengah */
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    z-index: 2600;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-height: 90vh; /* Agar tidak melebihi tinggi layar hp */
+    overflow-y: auto; /* Bisa di-scroll jika item banyak */
+}
+
+/* Styling tambahan untuk elemen di dalam modal */
+.modal-header h2 {
+    color: #bbaa87; /* ini color untuk tulisan */
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.total-pembayaran {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-order input, .form-order textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-wa {
+    background: #25d366;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Threzo Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+    <div class="navbar">
+        <div class="logo">THREZO COLLECTION</div>
+
+     <nav>
+  <div class="nav-link"><a href="index.html">Semua Katalog</a></div>
+  <div class="nav-link"><a href="Profil.html">Profil</a></div>
+
+   <!-- DROPDOWN GALERI -->
+  <div class="nav-item">
+    <a href="" id="galeriBtn">Galeri ▼</a>
+    <div class="dropdown" id="galeriMenu">
+      <a href="galeri-pendek.html">Pendek</a>
+      <a href="galeri-panjang.html">Panjang</a>
+    </div>
+  </div>
+
+  <div class="nav-link"><a href="kontak.html">kontak</a></div>
+</nav>
+
+        <button id="cart-icon" onclick="toggleModal()">
+    🛒 <span id="cart-count">0</span>
+</button>
+    </div>
+</header>
+
+<!-- ===== HERO / BANNER SLIDER ===== -->
+<section class="hero">
+    <div class="slider">
+
+        <div class="slides">
+            <div class="slide active">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1>CARGO STYLE</h1>
+                        <p>Tampil Maskulin & Stylis</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="bg1.png" alt="Skin Care">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1>CARGO PENDEK & PANJANG PRIA</h1>
+                        <p>Gaya Santai & Maskulin</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="bge2.png" alt="Make Up">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1>KOLEKSI CARGO PRIA</h1>
+                        <p>Pilihan Lengkap Untuk Gaya Santai</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="bg3.png" alt="Bath Body">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- PANAH -->
+        <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+        <button class="slider-btn next" id="nextBtn">&#10095;</button>
+
+        <!-- Navigasi titik -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== PROMO HARI INI ===== -->
+<section class="promo">
+    <h2 class="section-title"> Cargo Pendek Pria</h2>
+
+    <!-- TAMBAHKAN INI -->
+    <div class="produk-container">
+
+        <div class="produk-card">
+            <img src="produk 1.png">
+            <h4>Army Cargo Short</h4>
+            <p>Army</p>
+
+           <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+           <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+           <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+            <p class="harga">Rp140.000</p>
+
+            <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+        </div>
+
+        <div class="produk-card">
+            <img src="pendek coklat.png">
+            <h4>Chocolate Cargo Short</h4>
+            <p>Coklat</p>
+
+            <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+            <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+            <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+
+            <p class="harga">Rp153.000</p>
+            <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+        </div>
+
+        <div class="produk-card">
+            <img src="pendek hitam.png">
+            <h4>Black Cargo Short</h4>
+            <p>Black</p>
+
+           <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+           <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+            <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+            <p class="harga">Rp142.000</p>
+
+            <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+        </div>
+
+        <div class="produk-card">
+            <img src="pendek putih.png">
+            <h4>White Cargo Short</h4>
+            <p>White</p>
+
+            <div class="size-container">
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XL</button>
+            </div>   
+
+            <p class="harga">Rp145.000</p>
+            <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+        </div>
+
+    </div>
+</section>
+<!-- ===== PRODUK ===== -->
+    <h2 class="section-title"> Cargo Panjang Pria</h2>
+
+<section class="produk-container">
+
+    <!-- PRODUK 1 -->
+    <div class="produk-card">
+        <img src="Men_s Baggy Cargo Pull-On Pants.png">
+        <h4>Baggy Cargo Pull on Pants</h4>
+        <p>Abu-Abu Muda</p>
+
+        <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+        <p class="harga">Rp158.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="produk-card">
+        <img src="Men_s Light Wash Baggy Cargo Jeans.png">
+        <h4>Light Wash Cargo Jeans</h4>
+        <p>Jeans</p>
+
+         <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+        <p class="harga">Rp175.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="produk-card">
+        <img src="Skater Baggy Cargo Pants.png">
+        <h4>Skater Cargo Pants</h4>
+        <p>Jeans</p>
+
+        <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+        <p class="harga">Rp150.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 4 -->
+    <div class="produk-card">
+        <img src="Wide cargo pants-army.png">
+        <h4>Wide Cargo Army</h4>
+        <p>Army</p>
+
+         <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+       <p class="harga">Rp145.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 5 -->
+    <div class="produk-card">
+        <img src="Wide Cargo Pants_Charcoal.png">
+        <h4>Wide Cargo Charcoal</h4>
+        <p>Charcoal</p>
+
+         <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+
+        <p class="harga">Rp155.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 6 -->
+    <div class="produk-card">
+        <img src="01.png">
+        <h4>Skater Cargo</h4>
+        <p>Coklat Muda</p>
+
+        <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+       <p class="harga">Rp165.000</p>
+       <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 7 -->
+    <div class="produk-card">
+        <img src="cargo pants putih tulang.jpg">
+        <h4>Skater Cargo</h4>
+        <p>Putih Tulang</p>
+
+         <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+       <p class="harga">Rp175.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+    <!-- PRODUK 8 -->
+    <div class="produk-card">
+        <img src="kerny cargo pants.jpg">
+        <h4>Kerny Cargo</h4>
+        <p>Biru Tua</p>
+
+        <div class="size-container">
+        <button class="size-btn" onclick="pilihUkuran(this)">M</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">L</button>
+        <button class="size-btn" onclick="pilihUkuran(this)">XL</button>
+    </div>   
+
+
+        <p class="harga">Rp160.000</p>
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+    </div>
+
+
+</section>
+
+<!-- ================= FOOTER DETAIL ================= -->
+<footer class="footer-detail">
+    <div class="footer-container">
+
+        <!-- Tentang Kami -->
+        <div class="footer-box">
+            <h4>Tentang Kami</h4>
+            <p>
+                Threzo Collection adalah brand yang fokus pada celana cargo pria dengan desain simpel, nyaman, dan stylish untuk dipakai sehari-hari.
+            </p>
+
+            <div class="social-icon">
+                <a href="">🌐</a>
+                <a href="">📘</a>
+                <a href="">📸</a>
+                <a href="">🎵</a>
+            </div>
+        </div>
+
+        <!-- Navigasi-->
+        <div class="footer-box">
+            <h4>Navigasi</h4>
+            <ul>
+                <li><a href="index.html">katalog</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="galeri-panjang.html">Galeri</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Hubungi kami -->
+    <div class="footer-box">
+    <h4>Hubungi Kami</h4>
+    
+    <div class="hubungi-kami">
+        <p><b>WhatsApp:</b><br>
+        <a href="https://wa.me/628168111192" target="_blank">
+            +62 816-811-192
+        </a></p>
+
+        <p><b>Instagram:</b><br>
+        <a href="https://www.instagram.com/threzo_colletion/" target="_blank">
+            @threzo_collection
+        </a></p>
+    </div>
+</div>
+
+    </div>
+
+     <!-- Copyright -->
+    <div class="footer-bottom">
+        © Copyright Threzo Collection. All Rights Reserved
+    </div>
+</footer>
+
+<script>
+const btn = document.getElementById("galeriBtn");
+const menu = document.getElementById("galeriMenu");
+
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  menu.classList.toggle("show");
+});
+</script>
+
+<div id="modalOverlay" class="overlay" onclick="toggleModal()"></div>
+<div id="modalKeranjang" class="modal-box">
+    <div class="modal-header">
+        <h2>Keranjang Belanja</h2>
+    </div>
+    
+    <div id="cart-items-list">
+        <p style="text-align:center; color: #888;">Keranjang kosong</p>
+    </div>
+
+    <hr>
+    <div class="total-pembayaran">
+        <strong>Total Pembayaran:</strong>
+        <strong id="total-harga">Rp 0</strong>
+    </div>
+
+    <div class="form-order">
+        <label>Nama Lengkap</label>
+        <input type="text" id="namaPelanggan" placeholder="Contoh: Budi Santoso">
+        
+        <label>Alamat Pengiriman</label>
+        <textarea id="alamatPelanggan" placeholder="Masukkan alamat lengkap pengiriman"></textarea>
+    </div>
+
+    <button class="btn-wa" onclick="kirimKeWhatsApp()">
+        Checkout via WhatsApp
+    </button>
+    <p class="back-link" onclick="toggleModal()">← kembali ke Beranda</p>
+</div>
+<script src="script.js"></script> </body>
+</body>
+</html>

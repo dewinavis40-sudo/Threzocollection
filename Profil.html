@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Threzo Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Profil.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+    <div class="navbar">
+        <div class="logo">THREZO COLLECTION</div>
+
+         <nav>
+  <div class="nav-link"><a href="index.html">Semua Katalog</a></div>
+  <div class="nav-link"><a href="Profil.html">Profil</a></div>
+
+   <!-- DROPDOWN GALERI -->
+  <div class="nav-item">
+    <a href="" id="galeriBtn">Galeri ▼</a>
+    <div class="dropdown" id="galeriMenu">
+      <a href="galeri-pendek.html">Pendek</a>
+      <a href="galeri-panjang.html">Panjang</a>
+    </div>
+  </div>
+
+  <div class="nav-link"><a href="kontak.html">kontak</a></div>
+</nav>
+ <button id="cart-icon" onclick="toggleModal()">
+    🛒 <span id="cart-count">0</span>
+</button>
+    </div>
+</header>
+
+<!-- ===== HERO / BANNER SLIDER ===== -->
+<section class="hero">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1>CARGO STYLE</h1>
+                        <p>Tampil Maskulin & Stylis</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="bg1.png" alt="Skin Care">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1>CARGO PENDEK & PANJANG PRIA</h1>
+                        <p>Gaya Santai & Maskulin</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="bge2.png" alt="Make Up">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1>KOLEKSI CARGO PRIA</h1>
+                        <p>Pilihan Lengkap Untuk Gaya Santai</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="bg3.png" alt="Bath Body">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANAH -->
+        <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+        <button class="slider-btn next" id="nextBtn">&#10095;</button>
+
+        <!-- Navigasi titik -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROFIL KAMI ===== -->
+<section class="profil-kami">
+    <div class="container">
+
+        <h2>Profil Kami</h2>
+
+        <p>
+            Selamat datang di <strong>THREZO Collection!</strong><br>
+            Kami adalah toko online terpercaya yang fokus menyediakan berbagai jenis celana berkualitas tinggi dengan harga terjangkau. 
+            Berdiri sejak tahun 2015, Celana Threzo kini hadir untuk memenuhi kebutuhan fashion pria  yang mengutamakan kenyamanan, gaya, dan kualitas.
+        </p>
+
+        <h3>Visi Kami</h3>
+        <p>Menjadi toko online pilihan utama di Indonesia untuk produk celana modis, nyaman, dan tahan lama.</p>
+
+        <h3>Misi Kami</h3>
+        <ul>
+            <li>Menyediakan berbagai model celana terbaru yang mengikuti tren fashion terkini.</li>
+            <li>Memberikan layanan pelanggan yang ramah dan profesional.</li>
+            <li>Menghadirkan produk dengan kualitas terbaik dan harga bersaing.</li>
+            <li>Memudahkan pelanggan berbelanja dengan sistem transaksi yang aman dan pengiriman cepat.</li>
+        </ul>
+
+        <h3>Kenapa Memilih THREZO Collecetion?</h3>
+        <ul>
+            <li><strong>Kualitas Terjamin:</strong> Semua produk kami melalui proses seleksi ketat untuk memastikan bahan dan jahitan terbaik.</li>
+            <li><strong>Pilihan Lengkap:</strong> Mulai dari celana pendek Pria dan  Celana Cargo Pria untuk berbagai kesempatan.</li>
+            <li><strong>Harga Bersaing:</strong> Kami berkomitmen memberikan harga terbaik agar setiap pelanggan bisa tampil stylish tanpa khawatir budget.</li>
+            <li><strong>Layanan Cepat & Ramah:</strong> Tim customer service kami siap membantu Anda dengan cepat dan ramah kapan saja.</li>
+        </ul>
+
+        <p>
+            Terima kasih telah mempercayakan gaya Anda bersama kami. Selamat berbelanja dan tetap tampil keren bersama <strong>Celana Threzo!</strong>
+        </p>
+
+        <a href="index.html" class="btn-about">Selengkapnya</a>
+    </div>
+</section>
+
+<!-- ================= FOOTER DETAIL ================= -->
+<footer class="footer-detail">
+    <div class="footer-container">
+
+        <!-- Tentang Kami -->
+        <div class="footer-box">
+            <h4>Tentang Kami</h4>
+            <p>
+                Threzo Collection adalah brand yang fokus pada celana cargo pria dengan desain simpel, nyaman, dan stylish untuk dipakai sehari-hari.
+            </p>
+
+            <div class="social-icon">
+                <a href="">🌐</a>
+                <a href="">📘</a>
+                <a href="">📸</a>
+                <a href="">🎵</a>
+            </div>
+        </div>
+
+        <!-- Navigasi -->
+        <div class="footer-box">
+            <h4>Navigasi</h4>
+            <ul>
+               <li><a href="index.html">katalog</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="galeri-pendek.html">Galeri</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+            </ul>
+        </div>
+
+      <!-- Hubungi kami -->
+    <div class="footer-box">
+    <h4>Hubungi Kami</h4>
+    
+    <div class="hubungi-kami">
+        <p><b>WhatsApp:</b><br>
+        <a href="https://wa.me/628168111192" target="_blank">
+            +62 816-811-192
+        </a></p>
+
+        <p><b>Instagram:</b><br>
+        <a href="https://www.instagram.com/threzo_colletion/" target="_blank">
+            @threzo_collection
+        </a></p>
+    </div>
+</div>
+
+    </div>
+
+     <!-- Copyright -->
+    <div class="footer-bottom">
+        © Copyright Threzo Collection. All Rights Reserved
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+const btn = document.getElementById("galeriBtn");
+const menu = document.getElementById("galeriMenu");
+
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  menu.classList.toggle("show");
+});
+
+
+</script>
+
+</body>
+</html>

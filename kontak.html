@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Threzo Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontak.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+    <div class="navbar">
+        <div class="logo">THREZO COLLECTION</div>
+        
+            <nav>
+  <div class="nav-link"><a href="index.html">Semua Katalog</a></div>
+  <div class="nav-link"><a href="Profil.html">Profil</a></div>
+
+   <!-- DROPDOWN GALERI -->
+  <div class="nav-item">
+    <a href="#" id="galeriBtn">Galeri ▼</a>
+    <div class="dropdown" id="galeriMenu">
+      <a href="galeri-pendek.html">Pendek</a>
+      <a href="galeri-panjang.html">Panjang</a>
+    </div>
+  </div>
+
+   <a href="kontak.html">kontak</a>
+</nav>
+
+     <button id="cart-icon" onclick="toggleModal()">
+    🛒 <span id="cart-count">0</span>
+</button>
+    </div>
+</header>
+
+<!-- ================= MAIN CONTENT: Kontak Kami ===== -->
+<section class="contact-section">
+  
+  <!-- KIRI (INFO) -->
+  <div class="contact-info">
+    <h2>Kunjungi Workshop Kami</h2>
+
+    <p>Kami sangat senang jika Anda ingin melihat langsung proses produksi kami.</p>
+
+    <p><b>Alamat:</b><br>
+    RT.04 RW.02 Dk.kemoren Ds. Karangdowo Kec. Kedungwuni Kab. Pekalongan</p>
+
+    <p><b>Telepon / WA:</b><br>
+    +62 816-811-192</p>
+
+    <p><b>Marketplace:</b><br>
+    TikTok: Threzo Collection<br>
+    Instagram: Threzo_Collection</p>
+
+    <a href="" class="btn-maps">Buka di Google Maps</a>
+  </div>
+
+  <!-- KANAN (MAP) -->
+  <div class="map">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d3!2d109.6357777414688!3d-6.960545863461022!2m2!1f0!2f90!3m2!1i1024!2i768!4f75!3m3!1m2!1s0x2e70210cf8ac05f7%3A0x69e409f14d90c3b7!2sBalaidesa%20Karangdowo%20Kedungwuni!3m2!1sen!2sid!4v1775880388244!5m2!1sen!2sid"
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</div>
+</section>
+
+<!-- ================= FOOTER DETAIL ================= -->
+<footer class="footer-detail">
+    <div class="footer-container">
+
+        <!-- Tentang Kami -->
+        <div class="footer-box">
+            <h4>Tentang Kami</h4>
+            <p>
+                Threzo Collection adalah brand yang fokus pada celana cargo pria dengan desain simpel, nyaman, dan stylish untuk dipakai sehari-hari.
+            </p>
+
+            <div class="social-icon">
+                <a href="">🌐</a>
+                <a href="">📘</a>
+                <a href="">📸</a>
+                <a href="">🎵</a>
+            </div>
+        </div>
+
+        <!-- Navigasi-->
+        <div class="footer-box">
+            <h4>Navigasi</h4>
+            <ul>
+                <li><a href="index.html">katalog</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="galeri-panjang.html">Galeri</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Hubungi kami -->
+    <div class="footer-box">
+    <h4>Hubungi Kami</h4>
+    
+    <div class="hubungi-kami">
+        <p><b>WhatsApp:</b><br>
+        <a href="https://wa.me/628168111192" target="_blank">
+            +62 816-811-192
+        </a></p>
+
+        <p><b>Instagram:</b><br>
+        <a href="https://www.instagram.com/threzo_colletion/" target="_blank">
+            @threzo_collection
+        </a></p>
+    </div>
+</div>
+
+    </div>
+
+     <!-- Copyright -->
+    <div class="footer-bottom">
+        © Copyright Threzo Collection. All Rights Reserved
+    </div>
+</footer>
+
+<script>
+const btn = document.getElementById("galeriBtn");
+const menu = document.getElementById("galeriMenu");
+
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  menu.classList.toggle("show");
+});
+</script>
+
+
+<script src="script.js"></script> </body>
+</body>
+</html>

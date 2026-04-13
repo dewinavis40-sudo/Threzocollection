@@ -1,0 +1,338 @@
+/* ================= RESET & GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #F5F1EA, #efe7dc);/* bg produk*/
+    color: #333;
+    line-height: 1.5;
+}
+/* ================= HEADER ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(to bottom, #F5F1EA, #efe7dc);/* di navigasi nan*/
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo brand */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b58a60;
+}
+
+/* Link navigasi */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+nav a:hover {
+    color: #3b352f;
+}
+
+
+.cart {
+    font-size: 18px;
+}
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+/* ================= MAIN CONTENT: KONTAK ================= */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.info {
+    max-width: 500px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.address, .phone {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Container utama */
+.contact-section {
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 40px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* KIRI (merah) */
+.contact-info {
+    flex: 1;
+    background: #ffffff; /* bg kotak  */
+    color: #000000; /* Tulisan Kunjungi workShop */
+    padding: 40px;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+/* Tombol */
+.btn-maps {
+    display: inline-block;
+    margin-top: 20px;
+    background: #f4c400;
+    color: #bbaaaa;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* KANAN (map) */
+.map {
+    flex: 1.5; /* map lebih besar */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border: none;
+}
+
+/* =====================================================
+   CART ICON kotak keranjang pojok
+===================================================== */
+#cart-icon {
+    background: #C8A97E;
+    color: black;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+#cart-count {
+    background: red;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        min-height: 300px;
+    }
+}
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer-detail {
+    background: linear-gradient(135deg, #2B2B2B, #6b5e55);
+    margin-top: 60px;
+    font-size: 14px;
+    color: #cccccc;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-box h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.footer-box h4 {
+    color: #ffffff;
+}
+
+.footer-box p,
+.footer-box a {
+   color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+    color: #d4a373;
+}
+
+.social-icon a {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.marketplace span {
+    background: linear-gradient(135deg, #3a3a3a, #4a403a);
+    color: #fff;
+}
+
+.marketplace span {
+    background: #575454;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+
+
+/* ================= FLOATING BUTTON ================= */
+.scroll-top,
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.scroll-top {
+    bottom: 80px;
+    background: #333;
+}
+
+.whatsapp {
+    bottom: 20px;
+    background: #25d366;
+}
+
+/* =====================================================
+   DROPDOWN GALERI
+===================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* bungkus galeri */
+.nav-item {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 140px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* isi dropdown */
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #555;
+}
+
+/* hover item */
+.dropdown a:hover {
+    background: #f7f3ee;
+    color: #b58a60;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 9999; /* 🔥 penting */
+}
+
+.dropdown.show {
+    display: block;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,438 @@
+/* ================= RESET & GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= BG Website ================= */
+
+body {
+    background: linear-gradient(to bottom, #F5F1EA, #efe7dc);/* bg produk*/
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ================= HEADER ================= */
+
+/* Navbar (logo + menu) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(to bottom, #F5F1EA, #efe7dc);/* di navigasi nan*/
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo brand */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b58a60;
+}
+
+/* Link navigasi */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+nav a:hover {
+    color: #3b352f;
+}
+
+
+/* Cart icon */
+.cart {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#cart-count {
+    background: red;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+.dropdown {
+    z-index: 2000;
+}
+
+/* ================= HERO SLIDER BANER ATAS================= */
+.hero {
+    background: linear-gradient(135deg, #686464, #9b7c66); /* bg koleksi celana */
+     padding: 50px 20px;
+    overflow: visible;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;/* animasi geser */
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* isi slider(teks+gambar) */
+.hero-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+    align-items: center;
+    gap: 20px;
+    justify-items: center;  /* Menjaga elemen tetap di tengah */
+    text-align: center;  /* Pastikan teks rata tengah */
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* gambar slider*/
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+}
+
+/*  tombol panah Slider  */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background: rgba(241, 234, 234, 0.4);  /* bg tombol*/
+
+    color: #6b6666; 
+    border: none;
+    border-radius: 50%;  /* tombol slider bulat */
+
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;  /*efek transisi*/
+
+}
+
+ /* kiri */
+
+.slider-btn.prev {
+    left: 20px;
+}                           /* untuk button gambar koleksi celana */
+
+ /* kanan */
+.slider-btn.next {
+    right: 20px;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+.slider-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+/* titik slider */
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #b58a60;
+}
+
+/* ================= PROFIL KAMI (tengah halaman) ================= */
+.profil-kami {
+    padding: 60px 20px;
+    background: #f7f3ee;
+    text-align: center; /* teks tengah */
+}
+
+.profil-kami .container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;  /* Pastikan teks di tengah */
+}
+
+.profil-kami h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #b58a60;
+}
+
+.profil-kami h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profil-kami p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.profil-kami ul {
+    text-align: left; /* isi tetap kiri */
+    margin: 0 auto 20px;
+    max-width: 600px;
+    list-style: disc inside;
+}
+
+.profil-kami ul li {
+    margin-bottom: 10px;
+}
+ 
+/* tombol selengkapnya */
+.profil-kami .btn-about {
+    display: inline-block;
+    background: #b58a60;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.profil-kami .btn-about:hover {
+    background: #a5734c;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer-detail {
+    background: linear-gradient(135deg, #2B2B2B, #6b5e55); /* bg gelap */
+    margin-top: 60px;
+    font-size: 14px;
+    color: #cccccc;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 30px;
+}
+
+.footer-box h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.footer-box h4 {
+    color: #ffffff;
+}
+
+.footer-box p,
+.footer-box a {
+   color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+    color: #d4a373;
+}
+
+.social-icon a {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.marketplace span {
+    background: linear-gradient(135deg, #3a3a3a, #4a403a);
+    color: #fff;
+}
+
+.marketplace span {
+    background: #575454;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+ /* Copyright */
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+/* ================= FLOATING BUTTON ================= */
+.scroll-top,
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll-top {
+    bottom: 80px;
+    background: #888;
+    padding: 10px 12px;
+    display: none;
+}
+
+.whatsapp {
+    bottom: 20px;
+    background: #25D366;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* =====================================================
+   CART ICON kotak keranjang pojok
+===================================================== */
+#cart-icon {
+    background: #C8A97E; /* warna tombol */
+    color: black;
+    border-radius: 20px; /* bulat */
+    padding: 6px 10px;
+}
+#cart-count {
+    background: red; 
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero-wrapper {
+        grid-template-columns: 1fr; /* Menjadikan kolom satu pada tampilan mobile */
+        text-align: center; /* Membuat teks rata tengah */
+    }
+
+    .produk-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center; /* Pastikan footer juga rata tengah */
+    }
+
+    .profil-kami ul {
+        text-align: left;
+        max-width: 100%; /* Pastikan list item di responsif dengan benar */
+    }
+}
+
+/* =====================================================
+   DROPDOWN GALERI
+===================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* bungkus galeri */
+.nav-item {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #fff; /* bg drop down */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* kotak jadi melengkung */
+    min-width: 140px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* isi dropdown */
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #555;
+}
+
+/* hover item */
+.dropdown a:hover {
+    background: #f7f3ee;
+    color: #b58a60;
+}
+
+/* tampil saat hover */
+.dropdown {
+    display: none;
+}
+
+.dropdown.show {
+    display: block;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+

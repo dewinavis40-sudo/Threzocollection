@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Threzo Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Galeri.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+    <div class="navbar">
+        <div class="logo">THREZO COLLECTION</div>
+
+          <nav>
+  <div class="nav-link"><a href="index.html">Semua Katalog</a></div>
+  <div class="nav-link"><a href="Profil.html">Profil</a></div>
+
+   <!-- DROPDOWN GALERI -->
+  <div class="nav-item">
+    <a href="" id="galeriBtn">Galeri ▼</a>
+    <div class="dropdown" id="galeriMenu">
+      <a href="galeri-pendek.html">Pendek</a>
+      <a href="galeri-panjang.html">Panjang</a>
+    </div>
+  </div>
+
+  <div class="nav-link"><a href="kontak.html">kontak</a></div>
+</nav>
+
+           <button id="cart-icon" onclick="toggleModal()">
+    🛒 <span id="cart-count">0</span>
+</button>
+    </div>
+    </div>
+</header>
+
+<!-- ===== MAIN CONTENT SKIN CARE ===== -->
+<main class="container">
+
+    <p class="breadcrumb">Home - Produk - Cargo Panjang Pria</p>
+
+    <h1 class="title">CARGO PANJANG</h1>
+
+    <p class="result">Menampilkan semua 6 hasil</p>
+
+    <div class="product-grid">
+
+    <!-- PRODUK 1 -->
+       <div class="product-card">
+
+        <div class="image-container">
+        <img src="Wide Cargo Pants_Charcoal.png" alt="Cargo panjang Charcoal">
+
+        <!-- BADGE SIZE -->
+        <div class="size-badge">M, L, XL</div>
+       </div>
+       <h3>Wide Cargo pants Charcoal<br>
+       Charcoal
+       </h3>
+
+       <!-- BUTTON SIZE -->
+       <div class="sizes">
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+        </div>
+
+       <p class="price">Rp158.000</p>
+
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+       </div>
+
+    <!-- PRODUK 2 -->
+        <div class="product-card">
+
+        <div class="image-container">
+        <img src="Skater Baggy Cargo Pants.png" alt="Cargo panjang Cream">
+
+        <!-- BADGE SIZE -->
+        <div class="size-badge">M, L, XL</div>
+       </div>
+       <h3>Skater Baggy Cargo Pants<br>
+        Cream
+       </h3>
+
+       <!-- BUTTON SIZE -->
+       <div class="sizes">
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+        </div>
+
+       <p class="price">Rp155.000</p>
+
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+       </div>
+
+      
+    <!-- PRODUK 3 -->
+         <div class="product-card">
+
+        <div class="image-container">
+        <img src="Wide cargo pants-army.png" alt="Cargo panjang Army">
+
+        <!-- BADGE SIZE -->
+        <div class="size-badge">M, L, XL</div>
+       </div>
+       <h3>Wide Cargo Pants Army<br>
+       Army
+       </h3>
+
+       <!-- BUTTON SIZE -->
+       <div class="sizes">
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+        </div>
+
+       <p class="price">Rp145.000</p>
+
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+       </div>
+
+    <!-- PRODUK 4 -->
+         <div class="product-card">
+
+        <div class="image-container">
+        <img src="Skater Baggy Cargo Pants.png" alt="Cargo panjang Cream">
+
+        <!-- BADGE SIZE -->
+        <div class="size-badge">M, L, XL</div>
+       </div>
+       <h3>Skater Baggy Cargo Pants<br>
+        Cream
+       </h3>
+
+       <!-- BUTTON SIZE -->
+       <div class="sizes">
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+        </div>
+
+       <p class="price">Rp165.000</p>
+
+       <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+       </div>
+
+    <!-- PRODUK 5 -->
+         <div class="product-card">
+
+        <div class="image-container">
+        <img src="Men_s Light Wash Baggy Cargo Jeans.png" alt="Cargo panjang ">
+
+        <!-- BADGE SIZE -->
+        <div class="size-badge">M, L, XL</div>
+       </div>
+       <h3>Mens Light Wash bagy Cargo <br>
+        Jeans
+       </h3>
+
+       <!-- BUTTON SIZE -->
+       <div class="sizes">
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+        </div>
+
+       <p class="price">Rp175.000</p>
+
+     <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+       </div>
+
+     <!-- PRODUK 6 -->
+         <div class="product-card">
+
+        <div class="image-container">
+        <img src="kerny cargo pants.jpg" alt="Cargo panjang Denim">
+
+        <!-- BADGE SIZE -->
+        <div class="size-badge">M, L, XL</div>
+       </div>
+       <h3>kerny Cargo Pants<br>
+       Denim
+       </h3>
+
+       <!-- BUTTON SIZE -->
+       <div class="sizes">
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+        </div>
+
+       <p class="price">Rp160.000</p>
+
+        <button onclick="tambahKeranjang(this)">Tambah ke keranjang</button>
+       </div>
+</main>
+
+
+<!-- ================= FOOTER DETAIL ================= -->
+<footer class="footer-detail">
+    <div class="footer-container">
+
+        <!-- Tentang Kami -->
+        <div class="footer-box">
+            <h4>Tentang Kami</h4>
+            <p>
+                Saudagar WP merupakan tema toko online yang dibuat
+                khusus untuk WordPress dan WooCommerce.
+            </p>
+
+            <div class="social-icon">
+                <a href="">🌐</a>
+                <a href="">📘</a>
+                <a href="">📸</a>
+                <a href="">🎵</a>
+            </div>
+        </div>
+
+
+        <!-- Navigasi -->
+        <div class="footer-box">
+            <h4>Navigasi</h4>
+            <ul>
+                <li><a href="index.html">katalog</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="galeri-pendek.html">Galeri</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Hubungi kami -->
+    <div class="footer-box">
+    <h4>Hubungi Kami</h4>
+    
+    <div class="hubungi-kami">
+        <p><b>WhatsApp:</b><br>
+        <a href="https://wa.me/628168111192" target="_blank">
+            +62 816-811-192
+        </a></p>
+
+        <p><b>Instagram:</b><br>
+        <a href="https://www.instagram.com/threzo_colletion/" target="_blank">
+            @threzo_collection
+        </a></p>
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © Copyright Threzo Collection. All Rights Reserved
+    </div>
+</footer>
+
+
+<script src="Galeri.js"></script>
+
+<div id="modalOverlay" class="overlay" onclick="toggleModal()"></div>
+<div id="modalKeranjang" class="modal-box">
+    <div class="modal-header">
+        <h2>Keranjang Belanja</h2>
+    </div>
+    
+    <div id="cart-items-list">
+        <p style="text-align:center; color: #888;">Keranjang kosong</p>
+    </div>
+
+    <hr>
+    <div class="total-pembayaran">
+        <strong>Total Pembayaran:</strong>
+        <strong id="total-harga">Rp 0</strong>
+    </div>
+
+    <div class="form-order">
+        <label>Nama Lengkap</label>
+        <input type="text" id="namaPelanggan" placeholder="Contoh: Budi Santoso">
+        
+        <label>Alamat Pengiriman</label>
+        <textarea id="alamatPelanggan" placeholder="Masukkan alamat lengkap pengiriman"></textarea>
+    </div>
+
+    <button class="btn-wa" onclick="kirimKeWhatsApp()">
+        Checkout via WhatsApp
+    </button>
+    <p class="back-link" onclick="toggleModal()">← kembali ke Beranda</p>
+</div>
+
+</body>
+</html>
